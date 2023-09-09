@@ -58,6 +58,21 @@ body {
   background-color: var(--pink);
 }
 
+.mynavbar {
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "sacramento", cursive;
+  font-size: 3rem;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+}
 /* media Query */
 /* laptop */
 @media (max-width: 992px) {
@@ -77,6 +92,11 @@ body {
   .simply-countdown > .simply-section {
     padding: 60px;
     margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 /* mobile phone */
