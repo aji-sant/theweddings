@@ -36,7 +36,7 @@
         <h1>Yazid Ilmany Santosa</h1>
         <p>Kami akan melangsungkan acara walimatul khitan putra kami dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg" onClick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
 
@@ -73,7 +73,6 @@
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="#home">Home</a>
               <a class="nav-link" href="#info">Info</a>
-              <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#rsvp">RSVP</a>
               <a class="nav-link" href="#gift">Gift</a>
             </div>
@@ -188,6 +187,27 @@
           seconds: { singular: "second", plural: "seconds" },
         },
       });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      function disableScroll(){
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        screenLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function(){
+          window.scrollTo(scrollTop, screenLeft);
+        }
+
+        
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll(){
+        window.onscroll = function(){}
+        rootElement.style.scrollBehavior = 'smooth';
+      }
+      disableScroll();
     </script>
   </body>
 </html>
