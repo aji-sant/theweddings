@@ -86,7 +86,7 @@ body {
     padding-bottom: 5rem;
 }
 
-.home h2, .info h2{
+.home h2, .info h2, .rsvp h2, .gifts h2{
     color: var(--blue);
     font-family: 'Sacramento';
     font-size: 5rem;
@@ -153,6 +153,46 @@ body {
 
 .info .card-body{
   font-size: 1rem;
+}
+
+.rsvp, .gifts{
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  
+}
+
+.rsvp{
+  background-color: #ebe9e9;
+}
+.rsvp h2{
+  font-size: 4.5rem;
+}
+
+.rsvp p, .gifts p{
+  font-size: 1rem;
+  font-weight: 300;
+  
+}
+
+.rsvp button{
+  background-color: var(--blue);
+  color: white;
+  border: 1px solid var(--blue);
+}
+
+.rsvp button:hover{
+  background-color: white;
+  color: var(--blue);
+  border: 1px solid white;
+}
+
+.gifts span{
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
 }
 /* media Query */
 /* laptop */
